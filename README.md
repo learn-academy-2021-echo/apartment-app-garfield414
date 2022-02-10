@@ -1,24 +1,20 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Commands run:
+rails new apartment-app -d postgresql -T
+$ cd apartment-app
+$ rails db:create
+Add the remote from your GitHub classroom repository
+Create a default branch (main)
+Make an initial commit to the repository
+$ bundle add rspec-rails
+$ rails generate rspec:install
+$ bundle add devise
+$ rails generate devise:install
+$ rails generate devise User
+$ bundle add react-rails
+$ rails webpacker:install:react
+$ rails generate react:install
+$ rails generate react:component App
+$ rails generate controller Home
+$ rails db:migrate
+$ rails s
+rails g resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string user_id:integer
