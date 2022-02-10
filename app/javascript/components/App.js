@@ -1,12 +1,20 @@
-import React from "react"
-import PropTypes from "prop-types"
-class App extends React.Component {
-  render () {
+import React, { Component } from "react";
+
+class App extends Component {
+  render() {
+    const {
+      logged_in,
+      current_user,
+      new_user_route,
+      sign_in_route,
+      sign_out_route,
+    } = this.props;
     return (
-      <React.Fragment>
-      </React.Fragment>
+      <>
+        <h1>Hello World</h1>
+      </>
     );
   }
 }
 
-export default App
+export default App;
